@@ -1010,7 +1010,6 @@ input[type="radio"].visually-hidden {
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: -1;
 
   width: 360px;
   max-height: 545px;
@@ -1018,16 +1017,20 @@ input[type="radio"].visually-hidden {
   
   overflow: auto;
   background-color: #eeeeee;
+  opacity:0;
 
-  transition: transform 0.3s ease-out;
-  transform: translateY(180px);
+  transition: 0.3s ease-out;
+  transform: translateY(100%);
 }
 
-.templates-item:focus-within .templates-item-popup,
-.templates-item:hover .templates-item-popup {
-  z-index: 1;
+.templates-item:focus-within .templates-item-popup {
+  transform: translateY(0%);
+  opacity: 1;
+}
 
-  transform: translateY(0px);
+.templates-item:hover .templates-item-popup {
+  transform: translateY(0%);
+  opacity: 1;
 }
 
 .templates-item:hover::before {
@@ -1192,7 +1195,7 @@ input[type="radio"].visually-hidden {
 
 .location-info-number {
   text-decoration: none;
-  color:black;
+  color:#283136;
 }
 
 .location-info-button {
