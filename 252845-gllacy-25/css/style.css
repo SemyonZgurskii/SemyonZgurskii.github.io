@@ -1,0 +1,144 @@
+body {
+  min-width: 1200px;
+  margin: 0;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --------------------- */
+
+.container {
+  box-sizing: border-box;
+  width: 1200px;
+  padding-left: 27px;
+  padding-right: 27px;
+  margin: 0 auto;
+}
+
+.button-red {
+  display: inline-block;
+  
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #ef6441;
+}
+
+/* ----------------------HEADER------------------------ */
+
+.main-header {
+  margin-top: 9px;
+}
+
+.main-navigation__logo {
+  margin-right: 24px;
+}
+
+.main-navigation {
+  display: flex;
+}
+
+.main-navigation ul {
+  display: flex;
+
+  list-style: none;
+}
+
+.main-navigation__menu {
+  flex-wrap: wrap;
+
+  padding-left: 0;
+  margin: 0;
+  margin-right: auto;
+  margin-top: 19px;
+}
+
+.main-menu__item {
+  margin-right: 28px;
+}
+
+.main-menu__link {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-navigation__sidebar {
+  flex-wrap: wrap;
+
+  margin-bottom: 26px;
+}
+
+.sidebar-login__link {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.main-header__contacts {
+  
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.header-contacts__text {
+  margin: 0;
+
+  text-align: right;
+┘}
+
+.header-contacts__phone {
+  display: block;
+  margin-top: 4px;
+  
+  font-size: 22px;
+  line-height: 24px;
+}
+
+
+
+.special__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.special__item {
+  width: 560px;
+  height: 230px;
+  margin-right: 26px;
+
+  border-radius: 15px;
+}
+
+.special__item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.special__item--raspbery {
+  background-image: url("../img/raspbery-action.jpg");
+  background-repeat: no-repeat;
+}
