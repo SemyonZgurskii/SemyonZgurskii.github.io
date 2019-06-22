@@ -949,6 +949,12 @@ input[type="radio"].visually-hidden {
   margin-bottom: 12px;
 }
 
+.location iFrame {
+  width: 100%;
+
+  border: none;
+}
+
 .location__image {
   position: absolute;
   top: 0;
