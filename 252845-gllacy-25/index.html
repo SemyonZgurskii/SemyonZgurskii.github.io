@@ -19,7 +19,7 @@
   <nav class="main-navigation container">
     <a><img class="main-navigation__logo" src="img/logo.svg" width="154" height="64" alt="Gllacy shop logo"></a>
     <ul class="main-navigation__menu main-menu">
-      <li class="main-menu__item unwrap-menu"><a class="main-menu__link unwrap-menu__link" href="catalog.html">
+      <li class="main-menu__item unwrap-menu"><a class="main-menu__link unwrap-menu__link" href="#">
         Каталог
         </a>
         <ul class="sub-menu">
@@ -27,7 +27,7 @@
             <a class="sub-menu__link" href="#">Новинки</a>
           </li>
           <li class="sub-menu__item">
-            <a class="sub-menu__link" href="#">Сливочное</a>
+            <a class="sub-menu__link" href="catalog.html">Сливочное</a>
           </li>
           <li class="sub-menu__item">
             <a class="sub-menu__link" href="#">Щербеты</a>
@@ -335,9 +335,25 @@
   </ul>
   <p class="footer-copyright">
     <a href="#"><img src="img/logo-htmlacademy-small.svg" width="112" height="38" alt="Логотип HTML academy" class="footer-copyright__logo"></a>
-    <span>Сделано в <a href="#">HTML Academy</a> © 2019</span>
+    <span>Сделано в <a class="link-transp-bg" href="#">HTML Academy</a> © 2019</span>
   </p>
 </footer>
+
+<form class="feedback-form" action="https://echo.htmlacademy.ru/" method="POST">
+  <h2 class="visually-hidden">форма обратной связи</h2>
+  <p class="feedback-form__promise">
+    Мы обязательно вам ответим!
+  </p>
+  <input type="text" name="username" class="feedback-form__input">
+  <input type="email" name="useremail" class="feedback-form__input">
+  <textarea name="usercomment" cols="30" rows="10" placeholder="Напишите что-нибудь"></textarea>
+  <button class="feedback-form__submit-button button-red" type="submit">
+    Отправить
+  </button>
+  <button class="feedback-form__close-button">
+    <span class="visually-hidden">закртыть</span>
+  </button>
+</form>
 
 </div>
 </body>
