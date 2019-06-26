@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<input class="slider-radio-1 visually-hidden" type="radio" name="slider-switch" id="slide-1" checked>
+<input class="slider-radio-2 visually-hidden" type="radio" name="slider-switch" id="slide-2">
+<input class="slider-radio-3 visually-hidden" type="radio" name="slider-switch" id="slide-3">
+<div class="color-changer">
+
+
+<header class="main-header">
+  <nav class="main-navigation container">
+    <a><img class="main-navigation__logo" src="img/logo.svg" width="154" height="64" alt="Gllacy shop logo"></a>
+    <ul class="main-navigation__menu main-menu">
+      <li class="main-menu__item unwrap-menu"><a class="main-menu__link unwrap-menu__link" href="#">
+        Каталог
+        </a>
+        <ul class="sub-menu">
+          <li class="sub-menu__item sub-menu__new">
+            <a class="sub-menu__link" href="#">Новинки</a>
+          </li>
+          <li class="sub-menu__item">
+            <a class="sub-menu__link" href="catalog.html">Сливочное</a>
+          </li>
+          <li class="sub-menu__item">
+            <a class="sub-menu__link" href="#">Щербеты</a>
+          </li>
+          <li class="sub-menu__item">
+            <a class="sub-menu__link" href="#">Фруктовый лед</a>
+          </li>
+          <li class="sub-menu__item">
+            <a class="sub-menu__link" href="#">Мелорин</a>
+          </li>
+        </ul>
+      </li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">
+        Доставка и оплата
+      </a></li>
+      <li class="main-menu__item"><a class="main-menu__link" href="#">
+        О Компании
+      </a></li>
+    </ul>
+    
+      <div class="main-navigation__sidebar navigation-sidebar">
+        <form class="navigation-sidebar__item sidebar-search" action="https://echo.htmlacademy.ru/" method="GET">
+          <label class="sidebar-search__label" for="main-search">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
+           <g id="search-Layer_2">
+             <path fill="#FFFFFF" d="M16.958,15.527L11.75,10.32C12.533,9.247,13,7.93,13,6.5C13,2.91,10.09,0,6.5,0S0,2.91,0,6.5
+               S2.91,13,6.5,13c1.438,0,2.763-0.473,3.839-1.263l5.205,5.204L16.958,15.527z M6.5,11C4.019,11,2,8.981,2,6.5S4.019,2,6.5,2
+               S11,4.019,11,6.5S8.981,11,6.5,11z"/>
+           </g>
+           </svg>
+          </label>
+          <div class="sidebar-search__input-container">
+            <input class="sidebar-search__input input-text" id="main-search" type="search" name="main-search" placeholder="Что ищем?">
+          </div>
+        </form>
+        <div class="sidebar-login-container">
+          <a class="navigation-sidebar__item sidebar-login" href="#">
+            <svg version="1.1" id="login-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
+           <g>
+             <polygon fill="#FFFFFF" points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959 	"/>
+             <path fill="#FFFFFF" d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z"
+               />
+           </g>
+           </svg>
+            Вход
+          </a>
+          <form class="login-form" action="https://echo.htmlacademy.ru/" method="GET">
+            <input class="login-form__input input-text" type="email" name="user-email" placeholder="Электронная почта">
+            <input class="login-form__input input-text" type="password" name="user-password" placeholder="Пароль">
+            <div class="button-link-container">
+              <button class="login-form__button button-red">Войти</button>
+              <div class="link-container">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="basket-logo-container">
+          <a class="navigation-sidebar__item sidebar-basket" href="#">
+            <svg version="1.1" id="basket-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+            <g>
+              <polygon fill="transparent" points="5.888,4.031 6.922,13 17.372,13 18.548,4.031 "/>
+              <path fill="#FFFFFF" d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66
+                L17.372,13z"/>
+              <circle fill="#FFFFFF" cx="6.984" cy="18" r="2"/>
+              <circle fill="#FFFFFF" cx="15.984" cy="18" r="2"/>
+            </g>
+            </svg>
+            Пусто
+          </a>
+        </div>
+      </div>
+      
+  </nav>
+  <div class="breadcrumbs-contacts-container container">
+    <div class="main-header__contacts header-contacts">
+      <p class="header-contacts__text">
+        C 10 до 20, ежедневно
+        <a class="header-contacts__phone" href="tel:88124502525">8 812 450-25-25</a>
+      </p>
+    </div>
+  </div>
+</header>
+
+<main class="main-content">
+
+<section class="slider container">
+  <h2 class="visually-hidden">Быстрый заказ</h2>
+  <div class="slider__switch-container">
+    <label class="slider__switch-1" for="slide-1"></label>
+    <label class="slider__switch-2" for="slide-2"></label>
+    <label class="slider__switch-3" for="slide-3"></label>
+  </div>
+  <ul class="slider__list">
+    <li class="slide slide--first">
+      <p class="slide__description">Крем-брюле и пломбир с малиновым джемом</p>
+      <a href="#" class="slide__button button-red">Давайте оба!</a>
+    </li>
+    <li class="slide slide--second">
+      <p class="slide__description">Шоколадный пломбир и лимонный сорбет</p>
+      <a href="#" class="slide__button button-red">Давайте оба!</a>
+    </li>
+    <li class="slide slide--third">
+      <p class="slide__description">Пломбир с помадкой и клубничный щербет</p>
+      <a href="#" class="slide__button button-red">Давайте оба!</a>
+    </li>
+  </ul>
+</section>
+
+<section class="special">
+  <h2 class="visually-hidden">Специальные предложения</h2>
+  <ul class="special__list container">
+    <li class="special__item special__item--raspbery special-offer">
+      <h3 class="special-offer__title">Малинка даром!</h3>
+      <p class="special-offer__description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+      <a class="special-offer__button button-red" href="#">Хочу варенье!</a>
+    </li>
+    <li class="special__item special__item--chocolate special-offer">
+      <h3 class="special-offer__title">Шоколадки даром!</h3>
+      <p class="special-offer__description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+      <a class="special-offer__button button-red" href="#">Хочу шоколадки!</a>
+    </li>
+  </ul>
+</section>
+
+<section class="best-product">
+  <h2 class="visually-hidden">лучшие товары</h2>
+  <ul class="best-product__list container">
+    <li class="best-product__item product">
+      <img class="product__image" src="img/orange-icr.jpg" width="267" height="267" alt="Изображение сливочного мороженого с апельсиновым джемом и цитрусовой стружкой" >
+      <p class="product__price"><span>310₽</span>/кг</p>
+      <h3 class="product__description"><a class="link-transp-bg" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+      <button class="product__button button-red">Быстрый просмотр</button>
+    </li>
+    <li class="best-product__item product">
+      <img class="product__image" src="img/coffe-icr.jpg" width="267" height="267" alt="Изображение сливочно-кофейного мороженого с кусочками шоколада">
+      <p class="product__price"><span>380₽</span>/кг</p>
+      <h3 class="product__description"><a class="link-transp-bg" href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+      <button class="product__button button-red">Быстрый просмотр</button>
+    </li>
+    <li class="best-product__item product">
+      <img class="product__image" src="img/raspbery-icr.jpg" width="267" height="267" alt="Изображение сливочно-клубничного мороженого с присыпкой из белого шоколада" >
+      <p class="product__price"><span>355₽</span>/кг</p>
+      <h3 class="product__description"><a class="link-transp-bg" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+      <button class="product__button button-red">Быстрый просмотр</button>
+    </li>
+    <li class="best-product__item product">
+      <img class="product__image" src="img/cream-icr.jpg" width="267" height="267" alt="Изображение сливочного мороженого с апельсиновым джемом и цитрусовой стружкой" >
+      <p class="product__price"><span>415₽</span>/кг</p>
+      <h3 class="product__description"><a class="link-transp-bg" href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+      <button class="product__button button-red">Быстрый просмотр</button>
+    </li>
+  </ul>
+</section>
+
+<div class="container">
+  <article class="features">
+    <h1 class="features__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
+    <ul class="features__list">
+      <li class="features__item features__item--manufacturing">
+        <p class="features__description">
+          Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+        </p>
+      </li>
+      <li class="features__item features__item--ingridients">
+        <p class="features__description">
+          Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+        </p>
+      </li>
+      <li class="features__item features__item--cream">
+        <p class="features__description">
+          Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+        </p>
+      </li>
+      <li class="features__item features__item--pack">
+        <p class="features__description">
+          Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+        </p>
+      </li>
+    </ul>
+  </article>
+</div>
+
+<div class="blog-mailing-wrapper container">
+  <section class="blog-news">
+    <h2 class="blog-news__title">Новое в нашем блоге</h2>
+    <p><a href="#">
+      10 способов сервировки фруктовых щербетов к столу
+    </a></p>
+  </section>
+
+  <section class="mailing">
+    <h2 class="visually-hidden">Подписка на рассылку</h2>
+    <p class="mailing__description">
+      Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+    </p>
+    <form class="mailing__form" action="https://echo.htmlacademy.ru/">
+      <input class="mailing__input input-text" type="email" name="email" placeholder="Электронная почта">
+      <button class="mailing__button button-red" type="submit">Отправить</button>
+    </form>
+  </section>
+</div>
+
+<section class="location">
+  <h2 class="visually-hidden">Адрес магазина Глейси</h2>
+  <img class="location__image" src="img/map-image.jpg" width="1200" height="430" alt="Наш адрес: город Санкт-Петербург, улица Большая Конюшенная, дом 19, корпус 8. Телефон: 8 812 450 25 25. Ежедневно с 10 до 20">
+  <iframe src="https://yandex.ru/map-widget/v1/-/CCWAAM2f" height="430"></iframe>
+  <div class="location__info">
+    <p class="location__adress">
+      Адрес главного офиса<br> и офлайн-магазина:
+      <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+    </p>
+    <p class="location__phone">
+      Для заказов по телефону:
+      <a href="tel:88124502525">8 812 450-25-25</a>
+      <span>(с 10 до 20 ежедневно)</span>
+    </p>
+    <button class="location__feedback-button button-red">Форма обратной связи</button>
+  </div>
+</section>
+
+</main>
+
+<footer class="main-footer container">
+  <ul class="social">
+    <li><a class="social__button social__button--twitter" href="#">
+      <span class="visually-hidden">Твиттер</span>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px"
+	    height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+    <g id="twitter-Layer_1">
+    </g>
+    <g id="twitter-Layer_2">
+      <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
+        M23.944,12.809c-0.251,6.516-3.463,10.832-10.992,10.702c-0.14,0-0.205,0-0.233,0c-0.015,0-0.021,0-0.021,0
+        c-0.029,0-0.094,0-0.232,0c-0.447,0-4.543-0.443-5.344-1.823c2.479,0.19,4.247-0.406,5.12-1.136
+        c-1.048-0.289-2.923-0.461-3.251-2.848c0.384,0.104,0.618,0.221,1.299,0.113c-1.307-0.824-2.758-1.519-2.679-3.643
+        c0.311,0.317,1.164,0.518,1.46,0.457c-0.768-0.233-2.149-3.244-0.974-4.781c1.984,1.79,4.075,3.482,7.804,3.643
+        c0.227-2.214,1.24-3.699,3.168-4.325c1.84-0.479,3.255,0.26,3.901,1.138c0.737-0.224,1.453-0.466,2.193-0.685
+        c-0.004,0.833-0.569,1.463-0.935,1.709c0.747,0.165,1.423-0.475,1.423-0.475C25.467,11.818,24.557,12.58,23.944,12.809z"/>
+    </g>
+    </svg>
+
+    </a></li>
+    <li><a class="social__button social__button--insta" href="#">
+      <span class="visually-hidden">Инстаграмм</span>
+      <svg version="1.1" id="insta-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+    <g>
+      <path fill="#FFFFFF" d="M20.916,16c0,2.728-2.211,4.938-4.938,4.938S11.039,18.728,11.039,16c0-0.394,0.051-0.773,0.138-1.14
+        h-0.897v6.838h11.396V14.86h-0.897C20.865,15.227,20.916,15.606,20.916,16z"/>
+      <path fill="#FFFFFF" d="M15.978,18.659c1.466,0,2.659-1.193,2.659-2.659s-1.193-2.659-2.659-2.659
+        c-1.466,0-2.659,1.193-2.659,2.659S14.511,18.659,15.978,18.659z"/>
+      <rect x="18.637" y="10.302" fill="#FFFFFF" width="3.039" height="3.039"/>
+      <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
+        M23.955,21.698c0,1.254-1.025,2.279-2.279,2.279H10.279C9.026,23.978,8,22.952,8,21.698V10.302c0-1.253,1.026-2.279,2.279-2.279
+        h11.396c1.254,0,2.279,1.026,2.279,2.279V21.698z"/>
+    </g>
+    </svg>
+    </a></li>
+    <li><a class="social__button social__button--fb" href="#">
+      <span class="visually-hidden">Фейсбук</span>
+      <svg version="1.1" id="fb-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+      <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.163,0,16s7.164,16,16,16c8.837,0,16-7.164,16-16S24.837,0,16,0z M20.062,9.455h-3.021
+      v3.444h3.021v3.445h-3.021v8.61h-3.021v-8.61H11v-3.445h3.021V9.455c0-1.902,1.353-3.445,3.021-3.445h3.021V9.455z"/>
+     </svg>
+    </a></li>
+    <li><a class="social__button social__button--vk" href="#">
+      <span class="visually-hidden">Вконтакте</span>
+      <svg version="1.1" id="vk-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+    <g>
+      <path fill="#FFFFFF" d="M16.637,14.495c0.402-0.019,0.719-0.082,0.951-0.188c0.326-0.145,0.54-0.33,0.641-0.559
+        c0.101-0.229,0.15-0.496,0.15-0.797c0-0.232-0.058-0.465-0.174-0.697c-0.116-0.232-0.322-0.405-0.617-0.517
+        c-0.264-0.1-0.592-0.155-0.984-0.165c-0.392-0.009-0.943-0.014-1.652-0.014h-0.339v2.965h0.565
+        C15.749,14.523,16.235,14.514,16.637,14.495z"/>
+      <path fill="#FFFFFF" d="M18.118,17.084c-0.282-0.081-0.672-0.125-1.166-0.132c-0.494-0.006-1.012-0.009-1.55-0.009h-0.79v3.493
+        h0.264c1.014,0,1.74-0.003,2.18-0.009c0.438-0.007,0.843-0.088,1.212-0.245c0.377-0.157,0.633-0.364,0.774-0.625
+        s0.214-0.562,0.214-0.9c0-0.446-0.088-0.788-0.261-1.03C18.825,17.386,18.531,17.204,18.118,17.084z"/>
+      <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
+        M22.602,20.531c-0.273,0.533-0.646,0.976-1.124,1.327c-0.552,0.415-1.161,0.71-1.823,0.886s-1.501,0.264-2.519,0.264h-6.121V8.987
+        h5.443c1.13,0,1.957,0.038,2.48,0.113c0.524,0.076,1.045,0.242,1.561,0.5c0.533,0.27,0.929,0.632,1.189,1.087
+        c0.26,0.455,0.392,0.975,0.392,1.558c0,0.678-0.179,1.278-0.536,1.795c-0.358,0.518-0.863,0.92-1.517,1.208v0.075
+        c0.917,0.182,1.642,0.559,2.179,1.13c0.537,0.571,0.807,1.325,0.807,2.261C23.013,19.392,22.875,19.997,22.602,20.531z"/>
+    </g>
+    </svg>
+    </a></li>
+  </ul>
+  <ul class="more-info">
+    <li class="more-info__item more-info__item--important"><a class="link-transp-bg" href=#>
+      Для поставщиков
+    </a></li>
+    <li class="more-info__item"><a class="link-transp-bg" href=#>
+      Наши документы
+    </a></li>
+    <li class="more-info__item"><a class="link-transp-bg" href=#>
+      О производстве
+    </a></li>
+    <li class="more-info__item"><a class="link-transp-bg" href=#>
+      Экологические стандарты
+    </a></li>
+  </ul>
+  <p class="footer-copyright">
+    <a href="#"><img src="img/logo-htmlacademy-small.svg" width="112" height="38" alt="Логотип HTML academy" class="footer-copyright__logo"></a>
+    <span>Сделано в <a class="link-transp-bg" href="#">HTML Academy</a> © 2019</span>
+  </p>
+</footer>
+
+</div>
+</body>
+</html>
