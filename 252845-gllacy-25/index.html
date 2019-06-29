@@ -339,22 +339,29 @@
   </p>
 </footer>
 
-<form class="feedback-form" action="https://echo.htmlacademy.ru/" method="POST">
-  <h2 class="visually-hidden">форма обратной связи</h2>
-  <p class="feedback-form__promise">
-    Мы обязательно вам ответим!
-  </p>
-  <input type="text" name="username" class="feedback-form__input">
-  <input type="email" name="useremail" class="feedback-form__input">
-  <textarea name="usercomment" cols="30" rows="10" placeholder="Напишите что-нибудь"></textarea>
-  <button class="feedback-form__submit-button button-red" type="submit">
-    Отправить
-  </button>
-  <button class="feedback-form__close-button">
-    <span class="visually-hidden">закртыть</span>
-  </button>
-</form>
+<div class="feedback-form-overlay">
+  <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="POST">
+    <h2 class="visually-hidden">форма обратной связи</h2>
+    <p class="feedback-form__promise">
+      Мы обязательно вам ответим!
+    </p>
+    <div class="feedback-form__input-wrapper">
+      <input class="feedback-form__input input-text" type="text" name="username" placeholder="Как вас зовут?">
+      <input class="feedback-form__input input-text" type="email" name="useremail" placeholder="Ваша почта для ответа?">
+    </div>
+    <textarea class="input-text" name="usercomment" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+    <button class="feedback-form__submit-button button-red" type="submit">
+      Отправить
+    </button>
+    <button class="feedback-form__close-button">
+      <span class="visually-hidden">закртыть</span>
+    </button>
+  </form>
+</div>
 
 </div>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
