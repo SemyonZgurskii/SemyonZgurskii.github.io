@@ -48,61 +48,62 @@
       </a></li>
     </ul>
     
-      <div class="main-navigation__sidebar navigation-sidebar">
-        <form class="navigation-sidebar__item sidebar-search" action="https://echo.htmlacademy.ru/" method="GET">
-          <label class="sidebar-search__label" for="main-search">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
-           <g id="search-Layer_2">
-             <path fill="#FFFFFF" d="M16.958,15.527L11.75,10.32C12.533,9.247,13,7.93,13,6.5C13,2.91,10.09,0,6.5,0S0,2.91,0,6.5
-               S2.91,13,6.5,13c1.438,0,2.763-0.473,3.839-1.263l5.205,5.204L16.958,15.527z M6.5,11C4.019,11,2,8.981,2,6.5S4.019,2,6.5,2
-               S11,4.019,11,6.5S8.981,11,6.5,11z"/>
-           </g>
-           </svg>
-          </label>
-          <div class="sidebar-search__input-container">
-            <input class="sidebar-search__input input-text" id="main-search" type="search" name="main-search" placeholder="Что ищем?">
+    <div class="main-navigation__sidebar navigation-sidebar">
+      <div class="navigation-sidebar__item sidebar-search">
+        <a href="#" class="sidebar-search__link">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
+          <g id="search-Layer_2">
+            <path fill="#FFFFFF" d="M16.958,15.527L11.75,10.32C12.533,9.247,13,7.93,13,6.5C13,2.91,10.09,0,6.5,0S0,2.91,0,6.5
+              S2.91,13,6.5,13c1.438,0,2.763-0.473,3.839-1.263l5.205,5.204L16.958,15.527z M6.5,11C4.019,11,2,8.981,2,6.5S4.019,2,6.5,2
+              S11,4.019,11,6.5S8.981,11,6.5,11z"/>
+          </g>
+          </svg>
+          <span class="visually-hidden">поиск</span>
+        </a>
+        <form class="sidebar-search__form" action="https://echo.htmlacademy.ru/" method="GET">
+          <input class="sidebar-search__input input-text" type="search" name="main-search" placeholder="Что ищем?">
+        </form>
+      </div>
+      <div class="sidebar-login-container">
+        <a class="navigation-sidebar__item sidebar-login" href="#">
+          <svg version="1.1" id="login-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
+          <g>
+            <polygon fill="#FFFFFF" points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959 	"/>
+            <path fill="#FFFFFF" d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z"
+              />
+          </g>
+          </svg>
+          Вход
+        </a>
+        <form class="login-form" action="https://echo.htmlacademy.ru/" method="GET">
+          <input class="login-form__input input-text" type="email" name="user-email" placeholder="Электронная почта">
+          <input class="login-form__input input-text" type="password" name="user-password" placeholder="Пароль">
+          <div class="button-link-container">
+            <button class="login-form__button button-red" type="submit">Войти</button>
+            <div class="link-container">
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </div>
           </div>
         </form>
-        <div class="sidebar-login-container">
-          <a class="navigation-sidebar__item sidebar-login" href="#">
-            <svg version="1.1" id="login-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
-           <g>
-             <polygon fill="#FFFFFF" points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959 	"/>
-             <path fill="#FFFFFF" d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z"
-               />
-           </g>
-           </svg>
-            Вход
-          </a>
-          <form class="login-form" action="https://echo.htmlacademy.ru/" method="GET">
-            <input class="login-form__input input-text" type="email" name="user-email" placeholder="Электронная почта">
-            <input class="login-form__input input-text" type="password" name="user-password" placeholder="Пароль">
-            <div class="button-link-container">
-              <button class="login-form__button button-red">Войти</button>
-              <div class="link-container">
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="basket-logo-container">
-          <a class="navigation-sidebar__item sidebar-basket" href="#">
-            <svg version="1.1" id="basket-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
-            <g>
-              <polygon fill="transparent" points="5.888,4.031 6.922,13 17.372,13 18.548,4.031 "/>
-              <path fill="#FFFFFF" d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66
-                L17.372,13z"/>
-              <circle fill="#FFFFFF" cx="6.984" cy="18" r="2"/>
-              <circle fill="#FFFFFF" cx="15.984" cy="18" r="2"/>
-            </g>
-            </svg>
-            Пусто
-          </a>
-        </div>
       </div>
+      <div class="basket-logo-container">
+        <a class="navigation-sidebar__item sidebar-basket" href="#">
+          <svg version="1.1" id="basket-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+          <g>
+            <polygon fill="transparent" points="5.888,4.031 6.922,13 17.372,13 18.548,4.031 "/>
+            <path fill="#FFFFFF" d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66
+              L17.372,13z"/>
+            <circle fill="#FFFFFF" cx="6.984" cy="18" r="2"/>
+            <circle fill="#FFFFFF" cx="15.984" cy="18" r="2"/>
+          </g>
+          </svg>
+          Пусто
+        </a>
+      </div>
+    </div>
       
   </nav>
   <div class="breadcrumbs-contacts-container container">
@@ -163,25 +164,25 @@
       <img class="product__image" src="img/orange-icr.jpg" width="267" height="267" alt="Изображение сливочного мороженого с апельсиновым джемом и цитрусовой стружкой" >
       <p class="product__price"><span>310₽</span>/кг</p>
       <h3 class="product__description"><a class="link-transp-bg" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-      <button class="product__button button-red">Быстрый просмотр</button>
+      <a href="#" class="product__button button-red">Быстрый просмотр</a>
     </li>
     <li class="best-product__item product">
       <img class="product__image" src="img/coffe-icr.jpg" width="267" height="267" alt="Изображение сливочно-кофейного мороженого с кусочками шоколада">
       <p class="product__price"><span>380₽</span>/кг</p>
       <h3 class="product__description"><a class="link-transp-bg" href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
-      <button class="product__button button-red">Быстрый просмотр</button>
+      <a href="#" class="product__button button-red">Быстрый просмотр</a>
     </li>
     <li class="best-product__item product">
       <img class="product__image" src="img/raspbery-icr.jpg" width="267" height="267" alt="Изображение сливочно-клубничного мороженого с присыпкой из белого шоколада" >
       <p class="product__price"><span>355₽</span>/кг</p>
       <h3 class="product__description"><a class="link-transp-bg" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-      <button class="product__button button-red">Быстрый просмотр</button>
+      <a href="#" class="product__button button-red">Быстрый просмотр</a>
     </li>
     <li class="best-product__item product">
       <img class="product__image" src="img/cream-icr.jpg" width="267" height="267" alt="Изображение сливочного мороженого с апельсиновым джемом и цитрусовой стружкой" >
       <p class="product__price"><span>415₽</span>/кг</p>
       <h3 class="product__description"><a class="link-transp-bg" href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
-      <button class="product__button button-red">Быстрый просмотр</button>
+      <a href="#" class="product__button button-red">Быстрый просмотр</a>
     </li>
   </ul>
 </section>
@@ -237,18 +238,18 @@
 <section class="location">
   <h2 class="visually-hidden">Адрес магазина Глейси</h2>
   <img class="location__image" src="img/map-image.jpg" width="1200" height="430" alt="Наш адрес: город Санкт-Петербург, улица Большая Конюшенная, дом 19, корпус 8. Телефон: 8 812 450 25 25. Ежедневно с 10 до 20">
-  <iframe src="https://yandex.ru/map-widget/v1/-/CCWAAM2f" height="430"></iframe>
+  <iframe src="https://yandex.ru/map-widget/v1/-/CCWAAM2f" height="429"></iframe>
   <div class="location__info">
     <p class="location__adress">
-      Адрес главного офиса<br> и офлайн-магазина:
-      <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+      Адрес главного офиса и офлайн-магазина:
     </p>
+    <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
     <p class="location__phone">
       Для заказов по телефону:
       <a href="tel:88124502525">8 812 450-25-25</a>
       <span>(с 10 до 20 ежедневно)</span>
     </p>
-    <button class="location__feedback-button button-red">Форма обратной связи</button>
+    <a class="location__feedback-button button-red">Форма обратной связи</a>
   </div>
 </section>
 
@@ -334,8 +335,8 @@
     </a></li>
   </ul>
   <p class="footer-copyright">
-    <a href="#"><img src="img/logo-htmlacademy-small.svg" width="112" height="38" alt="Логотип HTML academy" class="footer-copyright__logo"></a>
-    <span>Сделано в <a class="link-transp-bg" href="#">HTML Academy</a> © 2019</span>
+    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy-small.svg" width="112" height="38" alt="Логотип HTML academy" class="footer-copyright__logo"></a>
+    <span>Сделано в <a class="link-transp-bg" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</span>
   </p>
 </footer>
 
@@ -353,7 +354,7 @@
     <button class="feedback-form__submit-button button-red" type="submit">
       Отправить
     </button>
-    <button class="feedback-form__close-button">
+    <button class="feedback-form__close-button" type="submit">
       <span class="visually-hidden">закртыть</span>
     </button>
   </form>
@@ -361,7 +362,7 @@
 
 </div>
 
-<script src="js/script.js"></script>
+<script src="js/js-min.js"></script>
 
 </body>
 </html>
