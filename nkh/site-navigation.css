@@ -1,0 +1,33 @@
+.site-navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-left: 0;
+
+    list-style: none;
+}
+
+.site-navigation__link {
+    padding: 15px;
+    border-bottom: 2px solid #dedede;
+
+    color: #211f22;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.site-navigation__link:hover,
+.site-navigation__link:focus {
+    border-bottom: 2px solid #211f22;
+}
+
+.site-navigation__link:active {
+    border-bottom: 2px solid #000000;
+}
+
+.site-navigation__link--active:hover,
+.site-navigation__link--active:focus,
+.site-navigation__link--active {
+    border-bottom: 2px solid #ff4545;
+}

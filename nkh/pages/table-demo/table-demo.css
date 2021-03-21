@@ -1,0 +1,16 @@
+.table-demo {
+    border-collapse: collapse;
+
+    border: 2px solid #737373;
+}
+
+.table-demo__cell {
+    width: 150px;
+    height: 250px;
+
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+
+    border: 2px solid #211f22;
+}

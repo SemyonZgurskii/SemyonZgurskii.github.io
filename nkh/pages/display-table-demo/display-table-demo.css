@@ -1,0 +1,22 @@
+.display-table-demo {
+    display: table;
+
+    border: 2px solid #ff4545;
+}
+
+.display-table-demo__row {
+    display: table-row;
+}
+
+.display-table-demo__cell {
+    display: table-cell;
+    width: 150px;
+    height: 250px;
+
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+
+    border: 2px solid #211f22;
+}
