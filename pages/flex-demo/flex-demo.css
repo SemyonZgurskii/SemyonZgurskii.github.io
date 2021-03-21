@@ -1,0 +1,27 @@
+.flex-demo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-direction: column;
+    max-width: 604px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    list-style: none;
+    border: 2px solid #e30000;
+}
+
+.flex-demo__item {
+    width: 150px;
+    min-height: 250px;
+
+    font-size: 40px;
+    font-weight: 500;
+
+    border: 2px solid #211f22;
+}
+
+.flex-demo__item:first-child {
+    align-self: center;
+}

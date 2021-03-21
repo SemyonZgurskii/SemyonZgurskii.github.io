@@ -1,0 +1,27 @@
+.float-demo {
+    max-width: 604px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    font-size: 0;
+    list-style: none;
+    border: 2px solid #e30000;
+}
+
+.float-demo::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.float-demo__item {
+    float: left;
+    width: 150px;
+    min-height: 250px;
+
+    font-size: 40px;
+    font-weight: 500;
+
+    border: 2px solid #211f22;
+}
