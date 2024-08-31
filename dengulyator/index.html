@@ -9,83 +9,96 @@
 </head>
 
 <style>
-		@keyframes zoom-out-in {
-				0% {
-						transform: scale(1);
-				}
+    @keyframes zoom-out-in {
+        0% {
+            transform: scale(1);
+        }
         50% {
             transform: scale(5);
         }
-				100% {
-						transform: scale(1);
-				}
+        100% {
+            transform: scale(1);
+        }
     }
-		* {
+
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-		}
-		body {
+    }
+
+    body {
         margin: 0;
         padding: 0;
         line-height: 1.5;
         font-family: Roboto, "sans-serif";
-		}
-		.form {
+    }
+
+    .form {
         display: grid;
-				grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 16px;
         padding: 16px;
-		}
-		.label {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .label {
         display: grid;
         gap: 4px;
-		}
-		.input-title {
+    }
+
+    .input-title {
         padding-left: 4px;
         font-size: 16px;
         font-weight: 500;
         color: #424242;
         text-align: left;
-		}
-	.input {
-      padding: 8px 16px;
-      border: 1px solid #b2dfdb;
-      border-radius: 4px;
-	}
-	.input:focus {
-      border-color: #00897b;
-			outline: none;
-	}
-	.form-footer {
-			grid-column: 1 / -1;
-      display: grid;
-			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 16px;
-      margin-top: 36px;
-	}
-	.calculate-button {
-      padding: 8px 16px;
-      border: none;
-      background-color: #00796b;
-      border-radius: 4px;
-      color: #ffffff;
-	}
-	.payment-sum {
-      font-size: 30px;
-      font-weight: 600;
-	}
-	.scaled {
-			transform-origin: left;
-		animation: ease-in-out zoom-out-in 2s;
-	}
+    }
+
+    .input {
+        padding: 8px 16px;
+        border: 1px solid #b2dfdb;
+        border-radius: 4px;
+    }
+
+    .input:focus {
+        border-color: #00897b;
+        outline: none;
+    }
+
+    .form-footer {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 16px;
+        margin-top: 36px;
+    }
+
+    .calculate-button {
+        padding: 8px 16px;
+        border: none;
+        background-color: #00796b;
+        border-radius: 4px;
+        color: #ffffff;
+    }
+
+    .payment-sum {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .scaled {
+        transform-origin: left;
+        animation: ease-in-out zoom-out-in 2s;
+    }
 </style>
 
 <body>
 
 <form class="form">
 	<label class="label">
-		<h4 class="input-title">колиечество дней в месяце</h4>
+		<h4 class="input-title">количество дней в месяце</h4>
 		<input class="input" type="number" name="days-count">
 	</label>
 
@@ -126,18 +139,18 @@
 	const form = document.querySelector('form')
 
 	form.addEventListener('submit', (evt) => {
-		evt.preventDefault();
-		const daysCount = Number(daysCountElement.value);
-		const livedDaysCount = Number(livedDaysCountElement.value);
-		const overallPrice = Number(overallPriceElement.value);
-		const peopleCount = Number(peopleCountElement.value);
-		const somGrade = Number(somGradeElement.value);
+		evt.preventDefault()
+		const daysCount = Number(daysCountElement.value)
+		const livedDaysCount = Number(livedDaysCountElement.value)
+		const overallPrice = Number(overallPriceElement.value)
+		const peopleCount = Number(peopleCountElement.value)
+		const somGrade = Number(somGradeElement.value)
 
-		console.log({daysCount, livedDaysCount, overallPrice, peopleCount});
+		console.log({ daysCount, livedDaysCount, overallPrice, peopleCount })
 
-		const needToPayInBucks = overallPrice / daysCount / peopleCount * livedDaysCount;
-		const needToPayInSom = needToPayInBucks * somGrade;
-		paymentSumElement.innerHTML = `${needToPayInBucks.toFixed(2)} $, ${needToPayInSom.toFixed(2)} som`;
+		const needToPayInBucks = overallPrice / daysCount / peopleCount * livedDaysCount
+		const needToPayInSom = needToPayInBucks * somGrade
+		paymentSumElement.innerHTML = `${needToPayInBucks.toFixed(2)} $, ${needToPayInSom.toFixed(2)} som`
 		paymentSumElement.classList.remove('scaled')
 		paymentSumElement.classList.add('scaled')
 	})
