@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>dengulyator</title>
+</head>
+
+<style>
+		@keyframes zoom-out-in {
+				0% {
+						transform: scale(1);
+				}
+        50% {
+            transform: scale(5);
+        }
+				100% {
+						transform: scale(1);
+				}
+    }
+		* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+		}
+		body {
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        font-family: Roboto, "sans-serif";
+		}
+		.form {
+        display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 16px;
+        padding: 16px;
+		}
+		.label {
+        display: grid;
+        gap: 4px;
+		}
+		.input-title {
+        padding-left: 4px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #424242;
+        text-align: left;
+		}
+	.input {
+      padding: 8px 16px;
+      border: 1px solid #b2dfdb;
+      border-radius: 4px;
+	}
+	.input:focus {
+      border-color: #00897b;
+			outline: none;
+	}
+	.form-footer {
+			grid-column: 1 / -1;
+      display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+      margin-top: 36px;
+	}
+	.calculate-button {
+      padding: 8px 16px;
+      border: none;
+      background-color: #00796b;
+      border-radius: 4px;
+      color: #ffffff;
+	}
+	.payment-sum {
+      font-size: 30px;
+      font-weight: 600;
+	}
+	.scaled {
+			transform-origin: left;
+		animation: ease-in-out zoom-out-in 2s;
+	}
+</style>
+
+<body>
+
+<form class="form">
+	<label class="label">
+		<h4 class="input-title">колиечество дней в месяце</h4>
+		<input class="input" type="number" name="days-count">
+	</label>
+
+	<label class="label">
+		<h4 class="input-title">общая стоимость в долларах</h4>
+		<input class="input" type="number" name="overall-price">
+	</label>
+
+	<label class="label">
+		<h4 class="input-title">количество человек</h4>
+		<input class="input" type="number" name="people-count">
+	</label>
+
+	<label class="label">
+		<h4 class="input-title">прожитое в месяце количество дней</h4>
+		<input class="input" type="number" name="lived-days-count">
+	</label>
+
+	<label class="label">
+		<h4 class="input-title">курс сома к доллару</h4>
+		<input class="input" type="number" name="som-grade">
+	</label>
+
+
+	<div class="form-footer">
+		<p class="payment-sum">0</p>
+		<button class="calculate-button">Расчитать</button>
+	</div>
+</form>
+
+<script>
+	const daysCountElement = document.querySelector('[name="days-count"]')
+	const livedDaysCountElement = document.querySelector('[name="lived-days-count"]')
+	const overallPriceElement = document.querySelector('[name="overall-price"]')
+	const peopleCountElement = document.querySelector('[name="people-count"]')
+	const somGradeElement = document.querySelector('[name="som-grade"]')
+	const paymentSumElement = document.querySelector('.payment-sum')
+	const form = document.querySelector('form')
+
+	form.addEventListener('submit', (evt) => {
+		evt.preventDefault();
+		const daysCount = Number(daysCountElement.value);
+		const livedDaysCount = Number(livedDaysCountElement.value);
+		const overallPrice = Number(overallPriceElement.value);
+		const peopleCount = Number(peopleCountElement.value);
+		const somGrade = Number(somGradeElement.value);
+
+		console.log({daysCount, livedDaysCount, overallPrice, peopleCount});
+
+		const needToPayInBucks = overallPrice / daysCount / peopleCount * livedDaysCount;
+		const needToPayInSom = needToPayInBucks * somGrade;
+		paymentSumElement.innerHTML = `${needToPayInBucks.toFixed(2)} $, ${needToPayInSom.toFixed(2)} som`;
+		paymentSumElement.classList.remove('scaled')
+		paymentSumElement.classList.add('scaled')
+	})
+</script>
+
+</body>
+</html>
